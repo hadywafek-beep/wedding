@@ -231,28 +231,29 @@ button:hover {
 /* ================= الأسماء ================= */
 
 .names {
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     gap: 25px;
-
     margin: 55px 0 40px;
-
+    flex-wrap: wrap; /* يمنع خروج الأسماء خارج الشاشة في الموبايل */
 }
 
-
 .names h2 {
-
-    font-size: 60px;
-
+    font-size: 60px; /* الحجم للكمبيوتر */
     font-weight: normal;
-
     letter-spacing: 3px;
+}
 
+/* التعديل الخاص بالموبايل والشاشات الصغيرة */
+@media (max-width: 768px) {
+    .names {
+        gap: 15px;
+        margin: 30px 0 20px;
+    }
+    .names h2 {
+        font-size: 38px; /* حجم مناسب وواضح جداً للموبايل */
+    }
 }
 
 
