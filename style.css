@@ -242,7 +242,7 @@ button:hover {
 /* 1. حجم الخط للشاشات الكبيرة (الكمبيوتر واللابتوب) */
 .names h2 {
     font-size: 60px; /* أو أي حجم تراه مناسباً للكمبيوتر */
-    font-weight: normal;
+    font-weight: bold;
     letter-spacing: 3px;
 }
 
